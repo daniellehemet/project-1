@@ -229,7 +229,8 @@ html {
 .navbar {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
 }
 .navbar li {
   text-decoration: none;
@@ -244,12 +245,42 @@ html {
 h1 {
   font-family: "Abril Fatface", cursive;
   color: #f6f6f6;
-  font-size: 6rem;
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: "Abril Fatface", cursive;
+  color: #1f1f1f;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Abril Fatface", cursive;
+  color: #1f1f1f;
   text-transform: uppercase;
 }
 
 span.home {
   color: #e4a436;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #1f1f1f;
+}
+
+.button {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1rem;
+  color: #1f1f1f;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navbar ul {
@@ -273,14 +304,60 @@ html {
   font-size: 125%;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .home span {
   color: #e4a436;
 }
 
 header {
   background-color: #345231;
+  height: 95vh;
+  max-height: 710px;
 }
 
 .wrapper {
-  margin: 0 100px;
+  margin: 0 175px;
+  position: relative;
+}
+
+.headerImageContainer {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  width: 475px;
+  height: 665px;
+}
+.headerImageContainer img {
+  -webkit-box-shadow: 20px 20px 0 white;
+          box-shadow: 20px 20px 0 white;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin-left: 55px;
+  margin-top: 225px;
+}
+
+.circleText {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+.aboutWillow {
+  background-color: #f6f6f6;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }

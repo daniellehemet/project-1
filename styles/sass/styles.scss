@@ -9,14 +9,60 @@ html {
   font-size: 125%;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .home span {
   color: $tertiaryColor;
 }
 
 header {
   background-color: $primaryColor;
+  height: 95vh;
+  max-height: 710px;
 }
 
 .wrapper {
-  margin: 0 100px;
+  margin: 0 175px;
+  position: relative;
 }
+
+.headerImageContainer {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  width: 475px;
+  height: 665px;
+    img {
+      box-shadow: 20px 20px 0 white; 
+      width: 100%;
+      height: 100%;
+    }
+}
+
+h1 {
+  margin-left: 55px;
+  margin-top: 225px;
+}
+
+.circleText {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+.aboutWillow {
+  background-color: $quinaryColor;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
