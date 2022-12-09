@@ -1,0 +1,10 @@
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+    li {
+      flex-direction: row;
+      margin: 30px 20px;
+    }
+}
+

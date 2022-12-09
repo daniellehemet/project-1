@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+.navbar {
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 1rem;
+    li {
+      text-decoration: none;
+      text-transform: uppercase;
+      list-style: none;
+        a {
+          text-decoration: none;
+          color: $quinaryColor;
+        }
+    }
+}
+
+h1 {
+  font-family: $primaryFont;
+  color: $quinaryColor;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+span.home {
+  color: $tertiaryColor;
+}
+
+

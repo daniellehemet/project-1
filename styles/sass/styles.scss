@@ -1,0 +1,22 @@
+
+@use "./variables" as *;
+@use "./setup";
+@use "./typography";
+@use "./nav";
+
+
+html {
+  font-size: 125%;
+}
+
+.home span {
+  color: $tertiaryColor;
+}
+
+header {
+  background-color: $primaryColor;
+}
+
+.wrapper {
+  margin: 0 100px;
+}
