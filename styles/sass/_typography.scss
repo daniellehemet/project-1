@@ -16,6 +16,11 @@
     }
 }
 
+.navbar .logo a {
+  font-family: $primaryFont;
+  font-size: 1.5rem;
+}
+
 h1 {
   font-family: $primaryFont;
   color: $quinaryColor;
@@ -38,6 +43,9 @@ h3 {
   font-family: $primaryFont;
   color: $quaternaryColor;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 300;
 
 }
 
@@ -48,6 +56,7 @@ span.home {
 p {
   font-family: $secondaryFont;
   color: $quaternaryColor;
+  line-height: 30px;
 }
 
 .button {
@@ -60,7 +69,4 @@ p {
 
 .aboutWillow {
   text-align: center;
-  line-height: 30px;
 }
-
-

@@ -242,6 +242,11 @@ html {
   color: #f6f6f6;
 }
 
+.navbar .logo a {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.5rem;
+}
+
 h1 {
   font-family: "Abril Fatface", cursive;
   color: #f6f6f6;
@@ -264,6 +269,9 @@ h3 {
   font-family: "Abril Fatface", cursive;
   color: #1f1f1f;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 span.home {
@@ -273,6 +281,7 @@ span.home {
 p {
   font-family: "Montserrat", sans-serif;
   color: #1f1f1f;
+  line-height: 30px;
 }
 
 .button {
@@ -285,7 +294,6 @@ p {
 
 .aboutWillow {
   text-align: center;
-  line-height: 30px;
 }
 
 .navbar ul {
@@ -321,10 +329,16 @@ a {
   color: #e4a436;
 }
 
+.logo span {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.5rem;
+}
+
 header {
   background-color: #345231;
   height: 95vh;
   max-height: 710px;
+  min-height: 710px;
 }
 
 .wrapper {
@@ -369,10 +383,108 @@ h1 {
 
 .aboutWillow {
   background-color: #f6f6f6;
+  height: 45vh;
+  max-height: 500px;
+  min-height: 400px;
 }
-
-h2 {
+.aboutWillow h2 {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 20px;
+}
+
+.button {
+  background-color: #e4a436;
+  padding: 10px 20px;
+  margin-top: 25px;
+}
+
+.listsAndThings .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.listsAndThings .wrapper .bridgeContainer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 75px;
+}
+.listsAndThings .wrapper .bridgeContainer img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 20px 20px 0 #709b6b;
+          box-shadow: 20px 20px 0 #709b6b;
+}
+.listsAndThings .wrapper .faveThings {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 75px;
+}
+.listsAndThings .wrapper .bucketList {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: right;
+  padding-right: 75px;
+}
+.listsAndThings .wrapper .flowerContainer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.listsAndThings .wrapper .flowerContainer img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 20px 20px 0 #345231;
+          box-shadow: 20px 20px 0 #345231;
+}
+
+.willowsJourney {
+  background-color: #f6f6f6;
+}
+
+.willowsJourney .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.willowsJourney .wrapper .journeyTextContainer {
+  width: 65%;
+  margin-bottom: 150px;
+  margin-left: 125px;
+}
+.willowsJourney .wrapper .journeyTextContainer h2 {
+  padding-top: 100px;
+}
+
+.journeyImgContainer {
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+}
+.journeyImgContainer img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 20px 20px 0 #709b6b;
+          box-shadow: 20px 20px 0 #709b6b;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px 0;
 }

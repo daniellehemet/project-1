@@ -21,10 +21,16 @@ a {
   color: $tertiaryColor;
 }
 
+.logo span {
+  font-family: $primaryFont;
+  font-size: 1.5rem;
+}
+
 header {
   background-color: $primaryColor;
   height: 95vh;
   max-height: 710px;
+  min-height: 710px;
 }
 
 .wrapper {
@@ -68,11 +74,88 @@ h1 {
 
 .aboutWillow {
   background-color: $quinaryColor;
+  height: 45vh;
+  max-height: 500px;
+  min-height: 400px;
+    h2 {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 20px;
+    }
 }
 
-h2 {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 20px;
+.button {
+  background-color: $tertiaryColor;
+  padding: 10px 20px;
+  margin-top: 25px;
 }
+
+.listsAndThings .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+    .bridgeContainer {
+      flex-basis: 50%;
+      margin-bottom: 75px;
+        img {
+          width: 100%;
+          height: 100%;
+          box-shadow: 20px 20px 0 $secondaryColor;
+        }
+    }
+    .faveThings {
+      flex-basis: 50%;
+        padding-left: 75px;
+    }
+    .bucketList {
+      flex-basis: 50%;
+      text-align: right;
+      padding-right: 75px;
+    }
+    .flowerContainer {
+      flex-basis: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          box-shadow: 20px 20px 0 $primaryColor;
+        }
+    }
+}
+
+.willowsJourney {
+  background-color: $quinaryColor;
+}
+
+.willowsJourney .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+    .journeyTextContainer {
+      width: 65%;
+      margin-bottom: 150px;
+      margin-left: 125px;
+        h2 {
+          padding-top: 100px;
+        }
+    }
+}
+
+.journeyImgContainer {
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+    img {
+      width: 100%;
+      height:100%;
+      box-shadow: 20px 20px 0 $secondaryColor;
+      object-fit: cover;
+    }
+}
+
+.gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
 
