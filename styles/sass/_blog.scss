@@ -93,13 +93,14 @@ body {
     }
 }
 
-button {
+#blogPage button {
   font-size: 0.95rem;
   font-family: $primaryFont;
   background-color: $tertiaryColor;
   border: 0;
   padding: 10px;
   width: 100%;
+  text-transform: uppercase;
 }
 
 //  ASIDE STYLING

@@ -514,13 +514,14 @@ body {
           justify-content: space-between;
 }
 
-button {
+#blogPage button {
   font-size: 0.95rem;
   font-family: "Abril Fatface", cursive;
   background-color: #e4a436;
   border: 0;
   padding: 10px;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .asideBlogWrapper {
@@ -591,15 +592,67 @@ body {
 }
 
 .contactFormWrapper {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
 
 .asideContactWrapper {
-  -ms-flex-preferred-size: 27%;
-      flex-basis: 27%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   background-color: white;
   height: 65%;
+}
+
+#contactPage i {
+  color: #345231;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+#contactPage i:first-child {
+  padding-left: 0;
+}
+
+.contactInfo {
+  padding: 40px;
+}
+.contactInfo p {
+  margin: 0;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+input {
+  outline: none;
+  color: #1f1f1f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  padding: 20px;
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+textarea {
+  padding: 20px;
+}
+
+#contactPage button {
+  font-size: 0.95rem;
+  font-family: "Abril Fatface", cursive;
+  background-color: #e4a436;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 html {
