@@ -1,5 +1,6 @@
 
 @use "./variables" as *;
+@use "./mediaqueries";
 @use "./setup";
 @use "./typography";
 @use "./nav";
@@ -335,3 +336,13 @@ footer {
     }
 }
 
+.toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 21px;
+}
