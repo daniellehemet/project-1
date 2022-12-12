@@ -7,3 +7,20 @@
       margin: 30px 20px;
     }
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home span {
+  color: $tertiaryColor;
+}
+
+.logo span {
+  font-family: $primaryFont;
+  font-size: 1.5rem;
+}
