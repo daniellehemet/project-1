@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+body {
+  background-color: $quinaryColor;
+}
+
+#contactPage header {
+  height: 400px;
+  width: 100vw;
+  position: relative;
+    h1 {
+      position: absolute;
+      left: 100px;
+      bottom: -15px;
+      margin: 0 auto;
+  }
+}
+
+.contactWrapper {
+  display: flex;
+  margin: 100px 100px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.contactFormWrapper {
+  flex-basis: 70%;
+}
+
+.asideContactWrapper {
+  flex-basis: 27%;
+  background-color: white;
+  height: 65%;
+}

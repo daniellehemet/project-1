@@ -3,6 +3,8 @@
 @use "./setup";
 @use "./typography";
 @use "./nav";
+@use "./blog";
+@use "./contact";
 
 
 html {
@@ -11,23 +13,23 @@ html {
 
 // HEADER STYLING
 
-header {
+#homePage header {
   background-color: $primaryColor;
   height: 95vh;
   max-height: 710px;
   min-height: 710px;
 }
 
-.wrapper {
+#homePage .wrapper {
   margin: 0 160px;
   height: 100%;
 }
 
-.header {
+#homePage .header {
   position: relative;
 }
 
-.headerImageContainer {
+#homePage .headerImageContainer {
   position: absolute;
   width: 475px;
   height: 665px;
@@ -40,7 +42,7 @@ header {
     }
 }
 
-h1 {
+#homePage h1 {
   margin-left: 55px;
   margin-top: 225px;
 }
@@ -59,7 +61,7 @@ h1 {
 
 // WHO'S WILLOW SECTION STYLING
 
-.aboutWillow {
+#homePage .aboutWillow {
   background-color: $quinaryColor;
   height: 45vh;
   max-height: 500px;
@@ -71,17 +73,17 @@ h1 {
     }
 }
 
-.button {
+#homePage .button {
   background-color: $tertiaryColor;
   padding: 10px 20px;
   line-height: 70px;
 }
 
-.button:hover {
+#homePage .button:hover {
   font-size: 1.1rem;
 }
 
-.button:focus {
+#homePage .button:focus {
   font-size: 1.1rem;
 }
 
@@ -243,7 +245,7 @@ h1 {
     }
 }
 
-h3 a {
+#homePage h3 a {
   text-decoration: none;
   color: $quaternaryColor;
   &:hover {
@@ -253,7 +255,6 @@ h3 a {
     border-bottom: 2px solid $quaternaryColor;
   }
 }
-
 
 .photoIcon {
   display: inline-block;

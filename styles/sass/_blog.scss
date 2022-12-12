@@ -1,0 +1,142 @@
+@use "./variables" as *;
+
+
+body {
+  background-color: $quinaryColor;
+}
+
+// BLOG HEADER STYLING
+#blogPage header {
+  height: 400px;
+  width: 100vw;
+  position: relative;
+    h1 {
+      position: absolute;
+      left: 100px;
+      bottom: -15px;
+      margin: 0 auto;
+    }
+}
+
+// WRAPPER STYLING
+.blogWrapper {
+  margin: 100px 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+// ARTICLE STYLING
+.mainBlogWrapper {
+  flex-basis: 70%;
+    .blogArticle {
+      background-color: white;
+      border-bottom: 5px solid $secondaryColor;
+        h3 {
+            margin: 0 auto;
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+        p {
+          padding: 0px 40px;
+        }
+    }
+}
+
+// COMMENT SECTION STYLING
+.commentSection {
+  border-bottom: 5px solid $secondaryColor
+}
+
+.commentOne {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.commentTwo {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profileImgContainer {
+  flex-basis: 15%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+    
+.commentTextContainer {
+  flex-basis: calc(85% - 40px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+    p {
+      margin: 0;
+    }
+}
+
+// COMMENT FORM SECTION STYLING
+.commentForm {
+  display: flex;
+  flex-wrap: wrap;
+    input {
+      outline: none;
+      color: $quaternaryColor;
+      font-family: $secondaryFont;
+      font-size: 0.95rem;
+      padding: 20px;
+      flex-basis: calc(50% - 10px);
+      margin-top: 20px;
+      margin-bottom: 20px;
+      justify-content: space-between;
+    }
+}
+
+button {
+  font-size: 0.95rem;
+  font-family: $primaryFont;
+  background-color: $tertiaryColor;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+//  ASIDE STYLING
+.asideBlogWrapper {
+  flex-basis: 27%;
+}
+
+#blogPage .aboutWillow {
+  background-color: white;
+  p {
+    padding: 25px;
+  }
+}
+
+#blogPage .aboutWillow a {
+  color: $secondaryColor;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $secondaryColor;
+  }
+}
+
+.aboutImgContainer img {
+  padding: 30px;
+}
+
+#blogPage .recentPosts {
+  background-color: white;
+    ul {
+      padding-bottom: 25px;
+        p {
+          margin: 5px;
+        }
+    }
+}
+
+
+

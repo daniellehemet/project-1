@@ -24,9 +24,12 @@
 h1 {
   font-family: $primaryFont;
   color: $quinaryColor;
-  font-size: 7.2rem;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+#homePage h1 {
+  font-size: 7.2rem;
 }
 
 h2 {
@@ -34,9 +37,12 @@ h2 {
   color: $quaternaryColor;
   font-size: 2rem;
   text-transform: uppercase;
-  margin: 0 auto;
   letter-spacing: 1px;
   font-weight: 300;
+}
+
+#homePage h2 {
+  margin: 0 auto;
 }
 
 h3 {
@@ -46,10 +52,9 @@ h3 {
   letter-spacing: 1px;
   font-size: 1.5rem;
   font-weight: 300;
-
 }
 
-span.home {
+#homePage span.home {
   color: $tertiaryColor;
 }
 
@@ -67,6 +72,36 @@ p {
   text-transform: uppercase;
 }
 
-.aboutWillow {
+#homePage .aboutWillow {
   text-align: center;
+}
+
+// BLOG STYLES
+
+#blogPage h1 {
+  font-size: 3.6rem;
+}
+
+#blogPage .aboutWillow {
+  text-align: left;
+}
+
+h4 {
+  font-family: $primaryFont;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-left: 25px;
+  padding-top: 40px;
+  margin: 0;
+}
+
+// CONTACT STYLES
+
+#contactPage h1 {
+  font-size: 3.6rem;
+}
+
+#contactPage .emailContactInfo {
+  font-weight: bold;
 }

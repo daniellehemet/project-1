@@ -1,24 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <!-- ICONS -->
+  <script src="https://kit.fontawesome.com/4eb54bf803.js" crossorigin="anonymous"></script>
+
   <title>Daily Musings of Willow - Blog & News</title>
 </head>
-<body>
+
+<body id="blogPage">
+
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a class="home" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="about" href="">About</a>
+          </li>
+          <li>
+            <a class="logo" href=""><span class="logo">Willow</span></a>
+          </li>
+          <li>
+            <a class="blog" href="blog.html"><span class="blog">Blog</span></a>
+          </li>
+          <li>
+            <a class="contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+  <!-- header starts here -->
   <header>
+    <img src="../assets/blog-image-1.jpg" alt="dark green image of plants.">
     <h1>Blog & News</h1>
   </header>
-  <main>
-    <section class ="blogArticle">
-      <article>
-        <h3>My Favourite Travel Destinations</h3>
-      </article>
-    </section>
-  </main>
-  <aside>
 
-  </aside>
+  <div class="blogWrapper">
+    <div class="mainBlogWrapper">
+      <!-- main starts here -->
+      <main>
+        <section class ="blogArticle">
+          <article>
+            <h3 class="blogTitle">My Favourite Travel Destinations</h3>
+
+            <p>Monday October 8th, 2018 by Willow</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem dolorum est quae nostrum, molestiae illo molestias laudantium, possimus, aspernatur doloremque consequatur dolore consequuntur maiores vel ex aliquam atque iste nemo autem corrupti praesentium. Reiciendis, eum officia officiis reprehenderit iste consequuntur atque laborum aut voluptatum facere ad doloremque quam sapiente molestias!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, commodi. Suscipit dicta iste consequatur molestiae sit unde deserunt est qui. Laboriosam nulla laborum neque rem omnis obcaecati totam repellat ut tempore, quae ad animi magni vitae magnam vel et eligendi, ea enim commodi. Quia, quaerat labore. Deleniti autem nesciunt eaque eum illum? Ab, excepturi magni.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum esse impedit sequi voluptatum blanditiis saepe, deserunt ab, incidunt natus consectetur beatae ipsum magni numquam quia totam animi? Quaerat dolor eius nam incidunt consectetur autem porro molestias repellat quos eligendi. Nobis totam, ipsum perspiciatis vitae animi veritatis amet laboriosam dignissimos dolorum ducimus sequi in est similique. Quis corrupti nulla debitis doloribus recusandae aliquam ea molestias ipsa eveniet sapiente, voluptates hic est. Est doloremque minus sint, quo autem odit porro atque consequatur nostrum. Quibusdam accusantium alias nisi vero nesciunt iste delectus, quaerat, quam dignissimos molestias, doloremque neque. Porro asperiores quod ut rem.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi iure officia quis sequi, delectus   aspernatur qui ea nemo officiis?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nulla. Repellat, saepe ullam earum deserunt eveniet quo fugiat perferendis debitis consequatur distinctio optio aspernatur eum nihil accusamus culpa similique! Ipsum quos voluptatibus expedita temporibus laborum nostrum recusandae, aperiam rem a voluptates. Mollitia maiores officiis eaque nostrum iusto officia odit natus.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla et ducimus numquam omnis ut beatae illo iure rerum natus eum, blanditiis id, assumenda recusandae libero ab laboriosam nesciunt magnam eligendi dicta incidunt quidem dolorum! Atque quidem velit accusamus corporis nihil ipsum quia in? Ducimus nihil doloremque fugit neque quaerat voluptates officia sequi magnam ratione nostrum!</p>
+          </article>
+        </section> <!--blogArticle section ends-->
+
+        <section class="commentSection">
+          <div class="commentOne">
+            <div class="profileImgContainer">
+              <img src="../assets/blog-image-3.jpg" alt="User profile picture for Barb">
+            </div>
+            <div class="commentTextContainer">
+              <p>Tuesday October 9th, 2018 by Barb</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusantium eum magni illo aut, laudantium non. Consequuntur accusantium, repellat perspiciatis fugiat molestias doloribus eos expedita.</p>
+            </div>
+          </div>
+
+          <div class="commentTwo">
+            <div class="profileImgContainer">
+              <img src="../assets/blog-image-4.jpg" alt="User profile picture for Daisy">
+            </div>
+            <div class="commentTextContainer">
+              <p>Wednesday October 10th, 2018 by Daisy</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione harum voluptatibus atque vero unde perferendis eaque? Nam eius quae in totam dolor omnis aliquid id.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="commentForm">
+          <form action="#" name="commentForm">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name">
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email address">
+
+            <label for="comment"></label>
+            <textarea name="comment" id="comment" cols="105" rows="20" placeholder="Comment"></textarea>
+
+            <button type="submit">Post Comment</button>
+          </form>
+        </section>
+      </main> <!--main ends-->
+    </div> <!--mainBlogWrapper ends-->
+
+    <div class="asideBlogWrapper">
+      <aside>
+        <section class="aboutWillow">
+          <div class="aboutImgContainer">
+            <img src="../assets/blog-image-2.jpg" alt="Willow facing the camera, their face partially obscured by plants.">
+          </div>
+          <div class="aboutTextContainer">
+            <h4>About Willow</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, officia.<a href="#"> Find out more.</a></p>
+          </div>
+        </section>
+
+        <section class="recentPosts">
+          <h4>Recent posts</h4>
+          <ul>
+            <li>
+              <p>Lorem ipsum dolor sit.</p>
+            </li>
+            <li>
+              <p>Sit amet consectetur.</p>
+            </li>
+            <li>
+              <p>Lorem Impedit officia sit.</p>
+            </li>
+            <li>
+              <p>Repellat perspi fugia.</p>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </div> <!--asideBlogWrapper ends-->
+
+  </div> <!--blogWrapper ends-->
+  <footer>
+    <p>Copyright 2018 HackerYou</p>
+  </footer>
 </body>
 </html>

@@ -15,7 +15,7 @@
     }
 }
 
-ul {
+#homePage ul {
   list-style: none;
 }
 
@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-.home span {
+#homePage .home span {
   color: $tertiaryColor;
 }
 
@@ -42,4 +42,24 @@ a {
 .navbar a:focus {
   color: $tertiaryColor;
   font-size: 1rem;
+}
+
+// BLOG PAGE STYLES
+
+#blogPage .navbar {
+  background-color: $primaryColor;
+}
+
+#blogPage .blog span {
+  color: $tertiaryColor;
+}
+
+// CONTACT PAGE STYLES
+
+#contactPage .navbar {
+  background-color: $primaryColor;
+}
+
+#contactPage .contact span {
+  color: $tertiaryColor;
 }

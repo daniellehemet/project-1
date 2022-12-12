@@ -226,6 +226,16 @@ html {
   overflow: hidden;
 }
 
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: hidden;
+}
+
 .navbar {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -250,9 +260,12 @@ html {
 h1 {
   font-family: "Abril Fatface", cursive;
   color: #f6f6f6;
-  font-size: 7.2rem;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+#homePage h1 {
+  font-size: 7.2rem;
 }
 
 h2 {
@@ -260,9 +273,12 @@ h2 {
   color: #1f1f1f;
   font-size: 2rem;
   text-transform: uppercase;
-  margin: 0 auto;
   letter-spacing: 1px;
   font-weight: 300;
+}
+
+#homePage h2 {
+  margin: 0 auto;
 }
 
 h3 {
@@ -274,7 +290,7 @@ h3 {
   font-weight: 300;
 }
 
-span.home {
+#homePage span.home {
   color: #e4a436;
 }
 
@@ -292,8 +308,34 @@ p {
   text-transform: uppercase;
 }
 
-.aboutWillow {
+#homePage .aboutWillow {
   text-align: center;
+}
+
+#blogPage h1 {
+  font-size: 3.6rem;
+}
+
+#blogPage .aboutWillow {
+  text-align: left;
+}
+
+h4 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-left: 25px;
+  padding-top: 40px;
+  margin: 0;
+}
+
+#contactPage h1 {
+  font-size: 3.6rem;
+}
+
+#contactPage .emailContactInfo {
+  font-weight: bold;
 }
 
 .navbar ul {
@@ -318,7 +360,7 @@ p {
   height: 50px;
 }
 
-ul {
+#homePage ul {
   list-style: none;
 }
 
@@ -326,7 +368,7 @@ a {
   text-decoration: none;
 }
 
-.home span {
+#homePage .home span {
   color: #e4a436;
 }
 
@@ -347,41 +389,254 @@ a {
   font-size: 1rem;
 }
 
+#blogPage .navbar {
+  background-color: #345231;
+}
+
+#blogPage .blog span {
+  color: #e4a436;
+}
+
+#contactPage .navbar {
+  background-color: #345231;
+}
+
+#contactPage .contact span {
+  color: #e4a436;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+#blogPage header {
+  height: 400px;
+  width: 100vw;
+  position: relative;
+}
+#blogPage header h1 {
+  position: absolute;
+  left: 100px;
+  bottom: -15px;
+  margin: 0 auto;
+}
+
+.blogWrapper {
+  margin: 100px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainBlogWrapper {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+.mainBlogWrapper .blogArticle {
+  background-color: white;
+  border-bottom: 5px solid #709b6b;
+}
+.mainBlogWrapper .blogArticle h3 {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.mainBlogWrapper .blogArticle p {
+  padding: 0px 40px;
+}
+
+.commentSection {
+  border-bottom: 5px solid #709b6b;
+}
+
+.commentOne {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.commentTwo {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profileImgContainer {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.commentTextContainer {
+  -ms-flex-preferred-size: calc(85% - 40px);
+      flex-basis: calc(85% - 40px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.commentTextContainer p {
+  margin: 0;
+}
+
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.commentForm input {
+  outline: none;
+  color: #1f1f1f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  padding: 20px;
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button {
+  font-size: 0.95rem;
+  font-family: "Abril Fatface", cursive;
+  background-color: #e4a436;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.asideBlogWrapper {
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
+}
+
+#blogPage .aboutWillow {
+  background-color: white;
+}
+#blogPage .aboutWillow p {
+  padding: 25px;
+}
+
+#blogPage .aboutWillow a {
+  color: #709b6b;
+  font-weight: bold;
+  text-decoration: none;
+}
+#blogPage .aboutWillow a:hover, #blogPage .aboutWillow a:focus {
+  border-bottom: 1px solid #709b6b;
+}
+
+.aboutImgContainer img {
+  padding: 30px;
+}
+
+#blogPage .recentPosts {
+  background-color: white;
+}
+#blogPage .recentPosts ul {
+  padding-bottom: 25px;
+}
+#blogPage .recentPosts ul p {
+  margin: 5px;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+#contactPage header {
+  height: 400px;
+  width: 100vw;
+  position: relative;
+}
+#contactPage header h1 {
+  position: absolute;
+  left: 100px;
+  bottom: -15px;
+  margin: 0 auto;
+}
+
+.contactWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactFormWrapper {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.asideContactWrapper {
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
+  background-color: white;
+  height: 65%;
+}
+
 html {
   font-size: 125%;
 }
 
-header {
+#homePage header {
   background-color: #345231;
   height: 95vh;
   max-height: 710px;
   min-height: 710px;
 }
 
-.wrapper {
+#homePage .wrapper {
   margin: 0 160px;
   height: 100%;
 }
 
-.header {
+#homePage .header {
   position: relative;
 }
 
-.headerImageContainer {
+#homePage .headerImageContainer {
   position: absolute;
   width: 475px;
   height: 665px;
   top: -200px;
   right: 0;
 }
-.headerImageContainer img {
+#homePage .headerImageContainer img {
   -webkit-box-shadow: 20px 20px 0 white;
           box-shadow: 20px 20px 0 white;
   width: 100%;
   height: 100%;
 }
 
-h1 {
+#homePage h1 {
   margin-left: 55px;
   margin-top: 225px;
 }
@@ -398,29 +653,29 @@ h1 {
   height: 100%;
 }
 
-.aboutWillow {
+#homePage .aboutWillow {
   background-color: #f6f6f6;
   height: 45vh;
   max-height: 500px;
   min-height: 400px;
 }
-.aboutWillow h2 {
+#homePage .aboutWillow h2 {
   text-align: center;
   padding-top: 125px;
   padding-bottom: 20px;
 }
 
-.button {
+#homePage .button {
   background-color: #e4a436;
   padding: 10px 20px;
   line-height: 70px;
 }
 
-.button:hover {
+#homePage .button:hover {
   font-size: 1.1rem;
 }
 
-.button:focus {
+#homePage .button:focus {
   font-size: 1.1rem;
 }
 
@@ -603,14 +858,14 @@ h1 {
   margin-left: 70px;
 }
 
-h3 a {
+#homePage h3 a {
   text-decoration: none;
   color: #1f1f1f;
 }
-h3 a:hover {
+#homePage h3 a:hover {
   border-bottom: 2px solid #1f1f1f;
 }
-h3 a:focus {
+#homePage h3 a:focus {
   border-bottom: 2px solid #1f1f1f;
 }
 
