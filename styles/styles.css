@@ -531,6 +531,8 @@ body {
 
 #blogPage .aboutWillow {
   background-color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 #blogPage .aboutWillow p {
   padding: 25px;
@@ -735,6 +737,7 @@ html {
 .listsAndThings {
   height: 850px;
   min-height: 850px;
+  background-color: white;
 }
 
 .listsAndThings .wrapper {
@@ -818,6 +821,11 @@ html {
 
 .fullWidthImg {
   width: 100vw;
+}
+
+.gallery {
+  background-color: white;
+  padding: 50px 0;
 }
 
 .gallery ul {

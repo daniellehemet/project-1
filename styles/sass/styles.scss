@@ -92,6 +92,7 @@ html {
 .listsAndThings {
   height: 850px;
   min-height: 850px;
+  background-color: white;
 }
 
 .listsAndThings .wrapper {
@@ -169,6 +170,11 @@ html {
 }
 
 // GALLERY SECTION STYLING
+
+.gallery {
+  background-color: white;
+  padding: 50px 0;
+}
 
 .gallery ul {
   display: flex;
