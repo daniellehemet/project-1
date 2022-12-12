@@ -303,7 +303,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  margin: 0;
 }
 .navbar ul li {
   -webkit-box-orient: horizontal;
@@ -311,10 +311,11 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 30px 20px;
+  text-align: center;
 }
-
-html {
-  font-size: 125%;
+.navbar ul li a {
+  line-height: 50px;
+  height: 50px;
 }
 
 ul {
@@ -331,7 +332,23 @@ a {
 
 .logo span {
   font-family: "Abril Fatface", cursive;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: #e4a436;
+  font-size: 1rem;
+}
+
+.navbar a:focus {
+  color: #e4a436;
+  font-size: 1rem;
+}
+
+html {
+  font-size: 125%;
 }
 
 header {
@@ -389,14 +406,27 @@ h1 {
 }
 .aboutWillow h2 {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 125px;
   padding-bottom: 20px;
 }
 
 .button {
   background-color: #e4a436;
   padding: 10px 20px;
-  margin-top: 25px;
+  line-height: 70px;
+}
+
+.button:hover {
+  font-size: 1.1rem;
+}
+
+.button:focus {
+  font-size: 1.1rem;
+}
+
+.listsAndThings {
+  height: 850px;
+  min-height: 850px;
 }
 
 .listsAndThings .wrapper {
@@ -421,6 +451,7 @@ h1 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 75px;
+  padding-top: 100px;
 }
 .listsAndThings .wrapper .bucketList {
   -ms-flex-preferred-size: 50%;
@@ -437,6 +468,10 @@ h1 {
   height: 100%;
   -webkit-box-shadow: 20px 20px 0 #345231;
           box-shadow: 20px 20px 0 #345231;
+}
+
+.listsAndThings h3 {
+  margin: 0;
 }
 
 .willowsJourney {
@@ -566,6 +601,17 @@ h1 {
 }
 .sectionsSummary .wrapper .contactSection p {
   margin-left: 70px;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+h3 a:hover {
+  border-bottom: 2px solid #1f1f1f;
+}
+h3 a:focus {
+  border-bottom: 2px solid #1f1f1f;
 }
 
 .photoIcon {
