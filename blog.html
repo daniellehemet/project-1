@@ -164,26 +164,21 @@
     let date = new Date();
     let dateString = date.toDateString();
     let datePosted = `${dateString}`
-    
-    // console.log(name);
-    // console.log(email);
-    // console.log(comment);
-    // console.log(datePosted);
 
     if(event) {
 
       // create main comment div for profile pic and content to go in
       const commentBox = document.createElement('div');
       commentBox.classList.add('commentBox');
-      // create a new div userImg for commenter's profile pic
+      // create a new div userImg for commenter's profile pic to go in
       const userImg = document.createElement('div');
       userImg.classList.add('profileImgContainer');
       commentBox.append(userImg);
-      // create a new img element for pic to go in
+      // create a new img element for pic itself
       const image = document.createElement('img');
       image.src = "http://placekitten.com/89/89";
       userImg.append(image);
-      // create a new div commentText for new comment
+      // create a new div commentText for new comment content (the p's)
       const commentText = document.createElement('div');
       commentText.classList.add('commentTextContainer');
       // create a p for date and name and add to commentText
@@ -197,28 +192,14 @@
       // add new comment box to comment section at end
       commentBox.appendChild(commentText);
       commentSection.appendChild(commentBox);
+
+      // clear input fields
+      event.target[0].value = "";
+      event.target[1].value = "";
+      event.target[2].value = "";
     }
-    
-
-    //   // const commentBox = document.createElement('div');
-    //   // const commenterNameParagraph = document.createElement('p');
-    //   // commenterNameParagraph.textContent = ``
-   
-    
-
 
   })
-
-
-
-
-  // create commentForm object with {submit, comment, email, name}
-  // createElement for comment div that wraps around p and user profile pic
-  // createElement for top p with date and name - `date by ${name}`
-  // createElement for bottom p with textarea value inside
-    // console.log(event.target[0].value);
-    // console.log(event.target[1].value);
-    // console.log(event.target[2].value);
 
   </script>
 </body>
