@@ -78,6 +78,9 @@ body {
 
 .commentBox {
   display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 // COMMENT FORM SECTION STYLING

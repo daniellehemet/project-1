@@ -171,18 +171,31 @@
     // console.log(datePosted);
 
     if(event) {
-      // create a new div comment box for new comment
+
+      // create main comment div for profile pic and content to go in
       const commentBox = document.createElement('div');
-      commentBox.classList.add('commentTextContainer');
-      // create a p for date and name and add to commentBox
+      commentBox.classList.add('commentBox');
+      // create a new div userImg for commenter's profile pic
+      const userImg = document.createElement('div');
+      userImg.classList.add('profileImgContainer');
+      commentBox.append(userImg);
+      // create a new img element for pic to go in
+      const image = document.createElement('img');
+      image.src = "http://placekitten.com/89/89";
+      userImg.append(image);
+      // create a new div commentText for new comment
+      const commentText = document.createElement('div');
+      commentText.classList.add('commentTextContainer');
+      // create a p for date and name and add to commentText
       const commentInfo = document.createElement('p');
       commentInfo.textContent = `${datePosted} by ${name}`;
-      commentBox.appendChild(commentInfo);
-      // create a p for comment itself and add to commentBox
+      commentText.appendChild(commentInfo);
+      // create a p for comment itself and add to commentText
       const commentContent = document.createElement('p');
       commentContent.textContent = comment;
-      commentBox.appendChild(commentContent);
+      commentText.appendChild(commentContent);
       // add new comment box to comment section at end
+      commentBox.appendChild(commentText);
       commentSection.appendChild(commentBox);
     }
     
