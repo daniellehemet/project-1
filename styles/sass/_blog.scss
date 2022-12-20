@@ -45,7 +45,7 @@ body {
 
 // COMMENT SECTION STYLING
 .commentSection {
-  border-bottom: 5px solid $secondaryColor
+  border-bottom: 5px solid $secondaryColor;
 }
 
 .commentOne {
@@ -74,6 +74,10 @@ body {
     p {
       margin: 0;
     }
+}
+
+.commentBox {
+  display: flex;
 }
 
 // COMMENT FORM SECTION STYLING

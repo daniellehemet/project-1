@@ -165,13 +165,25 @@
     let dateString = date.toDateString();
     let datePosted = `${dateString}`
     
-    console.log(name);
-    console.log(email);
-    console.log(comment);
-    console.log(datePosted);
+    // console.log(name);
+    // console.log(email);
+    // console.log(comment);
+    // console.log(datePosted);
 
     if(event) {
+      // create a new div comment box for new comment
       const commentBox = document.createElement('div');
+      commentBox.classList.add('commentTextContainer');
+      // create a p for date and name and add to commentBox
+      const commentInfo = document.createElement('p');
+      commentInfo.textContent = `${datePosted} by ${name}`;
+      commentBox.appendChild(commentInfo);
+      // create a p for comment itself and add to commentBox
+      const commentContent = document.createElement('p');
+      commentContent.textContent = comment;
+      commentBox.appendChild(commentContent);
+      // add new comment box to comment section at end
+      commentSection.appendChild(commentBox);
     }
     
 
