@@ -657,6 +657,23 @@ textarea {
   text-transform: uppercase;
 }
 
+@media (max-width: 1533px) {
+  .willowsJourney .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .willowsJourney .wrapper .journeyTextContainer {
+    width: 55%;
+    margin-bottom: 150px;
+    margin-left: 50px;
+  }
+  .willowsJourney .wrapper .journeyTextContainer h2 {
+    padding-top: 100px;
+  }
+}
 @media (max-width: 320px) {
   .toggle {
     display: -webkit-box;

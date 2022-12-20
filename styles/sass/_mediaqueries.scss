@@ -5,10 +5,31 @@
 @use "./blog";
 @use "./contact";
 
-@media (max-width: 1534px) {
+// MAX WIDTH 1533px
+@media (max-width: 1533px) {
+  .willowsJourney .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+      .journeyTextContainer {
+        width: 55%;
+        margin-bottom: 150px;
+        margin-left: 50px;
+          h2 {
+          padding-top: 100px;
+        }
+      }
+  }
+
+  
+
+
+
 
 }
 
+
+
+// MAX WIDTH 320px
 @media (max-width: 320px) {
   .toggle {
     display: flex; 
