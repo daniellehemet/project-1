@@ -70,7 +70,7 @@
           </article>
         </section> <!--blogArticle section ends-->
 
-        <section class="commentSection">
+        <section class="commentSection" id="commentSection">
           <div class="commentOne">
             <div class="profileImgContainer">
               <img src="../assets/blog-image-3.jpg" alt="User profile picture for Barb">
@@ -150,26 +150,50 @@
   
   const formElement = document.querySelector('form');
 
-  const comments = {
-    name: document.getElementById('name'),
-    email: document.getElementById('email'),
-    comment: document.getElementById('comment')
-  }
+  const commentSection = document.getElementById('commentSection');
 
   formElement.addEventListener('submit', function (event) {
     event.preventDefault();
-    console.log(event.target[0].value);
-    console.log(event.target[1].value);
-    console.log(event.target[2].value);
+    // get the name from the name input
+    const name = event.target[0].value;
+    // get the email from the email input
+    const email = event.target[1].value;
+    // get the comment from the comment input
+    const comment = event.target[2].value;
+    // get date event happened(when comment was posted)
+    let date = new Date();
+    let dateString = date.toDateString();
+    let datePosted = `${dateString}`
+    
+    console.log(name);
+    console.log(email);
+    console.log(comment);
+    console.log(datePosted);
+
+    if(event) {
+      const commentBox = document.createElement('div');
+    }
+    
+
+    //   // const commentBox = document.createElement('div');
+    //   // const commenterNameParagraph = document.createElement('p');
+    //   // commenterNameParagraph.textContent = ``
+   
     
 
 
   })
 
+
+
+
   // create commentForm object with {submit, comment, email, name}
   // createElement for comment div that wraps around p and user profile pic
   // createElement for top p with date and name - `date by ${name}`
   // createElement for bottom p with textarea value inside
+    // console.log(event.target[0].value);
+    // console.log(event.target[1].value);
+    // console.log(event.target[2].value);
 
   </script>
 </body>
